@@ -210,7 +210,8 @@ Promise.all([
   obtainInstruction("brusselsSprouts", 5),
   obtainInstruction("brusselsSprouts", 6),
   obtainInstruction("brusselsSprouts", 7),
-  
-]).then(patata => patata.forEach(el => document.querySelector("#brusselsSprouts").innerHTML += `<li>${el}</li>`))
-
-
+])
+  //.then ((patata) => console.log(patata));
+  //.then ((values) => { return   document.querySelector("#brusselsSprouts").innerHTML += `<li>${values [0]}</li>`} )
+  .then((values) => {values.forEach((el) => {document.querySelector("#brusselsSprouts").innerHTML += `<li>${el}</li>`})})
+  document.querySelector("#brusselsSproutsImg").removeAttribute("hidden")
