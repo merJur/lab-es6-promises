@@ -210,6 +210,7 @@ Promise.all([
   obtainInstruction("brusselsSprouts", 5),
   obtainInstruction("brusselsSprouts", 6),
   obtainInstruction("brusselsSprouts", 7),
+  obtainInstruction("brusselsSprouts", 8),
 ])
   //.then ((patata) => console.log(patata));
   //.then ((values) => { return   document.querySelector("#brusselsSprouts").innerHTML += `<li>${values [0]}</li>`} )
