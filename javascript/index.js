@@ -216,3 +216,4 @@ Promise.all([
   //.then ((values) => { return   document.querySelector("#brusselsSprouts").innerHTML += `<li>${values [0]}</li>`} )
   .then((values) => {values.forEach((el) => {document.querySelector("#brusselsSprouts").innerHTML += `<li>${el}</li>`})})
   document.querySelector("#brusselsSproutsImg").removeAttribute("hidden")
+  .cath(err => console.error(err))
